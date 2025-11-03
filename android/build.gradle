@@ -1,6 +1,5 @@
 plugins {
     id 'com.android.library'
-    id 'org.jetbrains.kotlin.android' version '1.8.22' apply false
     id 'dev.flutter.flutter-gradle-plugin'
 }
 
@@ -9,7 +8,7 @@ version = '1.0'
 
 android {
     namespace 'com.vladih.computer_vision.flutter_vision'
-    compileSdk = 35  // أو 35 مع التأكد من AGP
+    compileSdk = 34  // خليها 34 عشان متوافق مع targetSdk
 
     defaultConfig {
         minSdk = 21
@@ -32,6 +31,13 @@ android {
 
     buildFeatures {
         mlModelBinding = true
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java']
+            resources.srcDirs = ['src/main/res']
+        }
     }
 }
 
