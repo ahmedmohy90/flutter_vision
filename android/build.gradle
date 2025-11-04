@@ -1,6 +1,5 @@
 plugins {
     id 'com.android.library'
-    id 'dev.flutter.flutter-gradle-plugin'
 }
 
 group = 'com.vladih.computer_vision.flutter_vision'
@@ -46,7 +45,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.vladiH:opencv-android:v1.0.0'
+    implementation 'com.github.vladiH:opencv-android:v1.0.2'
     implementation 'com.google.ai.edge.litert:litert:1.4.0'
     implementation 'com.google.ai.edge.litert:litert-api:1.4.0'
     implementation 'com.google.ai.edge.litert:litert-gpu:1.4.0'
